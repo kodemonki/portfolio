@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "predeploy": "tsc -b && vite build",
+    "build": "tsc -b && vite build --base=./",
+    "predeploy": "tsc -b && vite build --base=./",
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
