@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProjects } from "../service/apiRequests";
 import ProjectCard from "./ProjectCard";
 
+
 export interface Project {
   name: string;
   description: string;
@@ -15,17 +16,18 @@ export interface Project {
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
 
+
   useEffect(() => {
     getProjects().then((data: Project[]) => setProjects(data));
   }, []);
 
   return (
     <>
-      <div className="Projects">
+      <div className="Projects">       
         {projects.map((project, index) => {
           return (
             <ProjectCard
-              key={index}
+              key={`${project.name}${index}`}
               number={index}
               name={project.name}
               description={project.description}
