@@ -26,6 +26,12 @@
 .Footer__P {
   padding-left: 16px;
 }
+.DownloadCVLink:active, .DownloadCVLink:link, .DownloadCVLink:visited{
+  color:white;
+}
+.DownloadCVLink:hover {
+  color: rgb(255, 136, 0);
+}
 .Content {
   width: 100%;
 }
