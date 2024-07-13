@@ -45,6 +45,10 @@
   transform: scale(0);
   animation: fadeIn 0.5s forwards;
   border-radius: 2vw;
+  border: 5px rgb(122, 119, 116) solid;
+}
+
+.ProjectCard:hover {
   border: 5px rgb(255, 136, 0) solid;
 }
 
