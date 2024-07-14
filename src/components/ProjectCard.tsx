@@ -10,11 +10,12 @@ const ProjectCard: React.FC<ProjectData> = ({ project }) => {
         </div>
         <hr />
         <div>
-          <i>{technology}</i>
-        </div>
-        <div>
           <i>{description}</i>
         </div>
+        <div>
+          <i>{technology}</i>
+        </div>
+       
         <hr />  
         <img className="Card__img" src="images/static.png"/>
         <hr />  

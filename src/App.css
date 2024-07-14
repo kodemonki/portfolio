@@ -42,13 +42,14 @@
   background-color: #e2d9d9;
   color: #000;
   padding: 16px;
-  max-width:800px;
+  max-width: 800px;
+  min-width: 400px;
   margin-left: 16px;
   margin-right: 16px;
-  margin-bottom:16px;
+  margin-bottom: 16px;
   border: 4px rgb(70, 68, 67) solid;
 }
-.Card__img{
+.Card__img {
   max-width: 400px;
 }
 @media (min-width: 320px) {
@@ -74,7 +75,7 @@
   .Header__right {
     margin-top: 16px;
   }
-  .Page{
+  .Page {
     margin-top: 80px;
   }
 }
