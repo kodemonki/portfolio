@@ -2,20 +2,19 @@ import { useEffect, useState } from "react";
 import { getProjects } from "../service/apiRequests";
 import ProjectCard from "../components/ProjectCard";
 
+export interface ProjectData {
+  project:Project;
+}
 
 export interface Project {
   name: string;
   description: string;
   url: string;
-  number: number;
-  x: number;
-  y: number;
-  order: string;
+  technology: string;
 }
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-
 
   useEffect(() => {
     getProjects().then((data: Project[]) => setProjects(data));
@@ -23,18 +22,12 @@ const Projects = () => {
 
   return (
     <>
-      <div className="Projects">       
+      <div className="Page">
         {projects.map((project, index) => {
           return (
             <ProjectCard
               key={`${project.name}${index}`}
-              number={index}
-              name={project.name}
-              description={project.description}
-              url={project.url}
-              x={0}
-              y={0}
-              order="default"
+              project={project}         
             />
           );
         })}

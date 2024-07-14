@@ -24,7 +24,7 @@ const Experience = () => {
 
   return (
     <>
-      <div className="Experiences">
+      <div className="Page">
         {experiences.map((experience, index) => {
           return (
             <ExperienceCard

@@ -1,8 +1,8 @@
 
 export const getProjects = () =>{
-    return fetch('projects.json').then(res=>res.json());
+    return fetch('json/projects.json').then(res=>res.json());
 }
 
 export const getExperience = () =>{
-    return fetch('experience.json').then(res=>res.json());
+    return fetch('json/experience.json').then(res=>res.json());
 }

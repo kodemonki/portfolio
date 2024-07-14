@@ -1,24 +1,27 @@
-import { Project } from "../pages/Projects";
+import { ProjectData } from "../pages/Projects";
 
-const ProjectCard: React.FC<Project> = (project) => {
+const ProjectCard: React.FC<ProjectData> = ({ project }) => {
+  const { name, description, technology, url } = project;
   return (
     <div className="container">
-      <div
-        className="Card"
-        style={{
-          animationDelay: `${project.number * 0.25}s`,
-        }}
-      >
-        <div className="box">
-          <b>{project.name}</b>
+      <div className="Card">
+        <div>
+          <b>{name}</b>
+        </div>
+        <hr />
+        <div>
+          <i>{technology}</i>
         </div>
         <div>
-          <i>{project.description}</i>
+          <i>{description}</i>
         </div>
-        <br />
-        <a href={project.url} target="_blank">
-          {project.url}
+        <hr />  
+        <img className="Card__img" src="images/static.png"/>
+        <hr />  
+        <a href={url} target="_blank">
+          {url}
         </a>
+
       </div>
     </div>
   );
