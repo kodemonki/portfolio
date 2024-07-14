@@ -1,14 +1,13 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
   return (
     <div className="Header">
       <p className="Header__left">Portfolio - Thomas Jane</p>
       <p className="Header__right">
-        <Link to="/projects">projects</Link>
-        <Link to="/experience">experience</Link>
-        <Link to="/contact">contact</Link>
+        <Link to="/projects">Projects</Link>{' - '}
+        <Link to="/experience">Experience</Link>{' - '}
+        <Link to="/contact">Contact</Link>{' - '}
         <a href="/ThomasJaneCV_2024_july.pdf" download>
           Download&nbsp;CV
         </a>
