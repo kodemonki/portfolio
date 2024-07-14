@@ -6,8 +6,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 50px;
+  width: 100%;
   background-color: #000000;
   text-align: left;
 }
@@ -19,6 +18,7 @@
   right: 0px;
   top: 0px;
   padding-right: 16px;
+  margin-bottom: 16px;
 }
 .Content {
   margin-top: 50px;
@@ -29,50 +29,74 @@
 }
 .Projects {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: space-around;
-  gap: 20px;
   flex-wrap: wrap;
   overflow-x: hidden;
   overflow-y: scroll;
+  align-content: center;
 }
-.ProjectCard {
+.Experiences {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+}
+.Card {
   background-color: #ddd;
   color: #000;
-  min-width: 100px;
-  min-height: 100px;
   padding: 16px;
-  transform: scale(0);
+  margin-left: 16px;
+  margin-bottom:16px;
   animation: fadeIn 0.5s forwards;
-  border-radius: 2vw;
   border: 5px rgb(122, 119, 116) solid;
 }
-
-.ProjectCard:hover {
+.Card:hover {
   border: 5px rgb(255, 136, 0) solid;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.Page {
+  text-align: center;
 }
 
-.Stars {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .Header {
+    height: 88px;
+  }
+  .Header__right {
+    margin-top: 48px;
+  }
+  .Projects, .Experiences {
+    margin-top: 110px;
+  }
 }
-
-.dot {
-  position: absolute;
-  display: block;
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .Header {
+    height: 56px;
+  }
+  .Header__right {
+    margin-top: 16px;
+  }
+  .Projects, .Experiences {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }

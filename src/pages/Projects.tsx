@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProjects } from "../service/apiRequests";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 
 export interface Project {

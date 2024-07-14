@@ -1,10 +1,10 @@
-import { Project } from "./Projects";
+import { Project } from "../pages/Projects";
 
 const ProjectCard: React.FC<Project> = (project) => {
   return (
     <div className="container">
       <div
-        className="ProjectCard"
+        className="Card"
         style={{
           animationDelay: `${project.number * 0.25}s`,
         }}

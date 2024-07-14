@@ -1,21 +1,24 @@
 import "./App.css";
-import Projects from "./components/Projects";
+import Header from "./components/Header";
+import Projects from "./pages/Projects";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
     <>
-      <div className="Content">
-        <Projects />
-      </div>
-      <div className="Header">
-        <p className="Header__left">Portfolio - Thomas Jane</p>
-        <p className="Header__right">
-          <a>CV</a> - <a>Projects</a> - <a>Contact</a> -{" "}
-          <a href="/ThomasJaneCV_2024_july.pdf" download>
-            Click to download CV
-          </a>
-        </p>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" Component={Projects} />
+          <Route path="/projects" Component={Projects} />
+          <Route path="/experience" Component={Experience} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="*" Component={NotFound} />
+        </Routes>
+        <Header />
+      </Router>
     </>
   );
 };
