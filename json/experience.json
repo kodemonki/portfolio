@@ -29,14 +29,14 @@
   },
   {
     "name": "Jack Morton Worldwide",
-    "Role": "Freelance React Developer",
+    "role": "Freelance React Developer",
     "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
     "Skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "NETBuilder",
-    "sole": "Freelance React Developer",
+    "role": "Freelance React Developer",
     "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
@@ -46,13 +46,13 @@
     "role": "Freelance Technical lead Developer",
     "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
-    "Technology": "Typescript, React, CSS, HTML, NODE"
+    "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "Native",
-    "Role": "Freelance React Developer",
+    "role": "Freelance React Developer",
     "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
-    "Skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
+    "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
