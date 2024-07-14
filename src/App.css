@@ -38,14 +38,14 @@
   align-content: center;
 }
 .Card {
-  background-color: #ddd;
+  background-color: #f1efef;
   color: #000;
   padding: 16px;
   max-width:800px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom:16px;
-  border: 5px rgb(122, 119, 116) solid;
+  border: 2px rgb(122, 119, 116) solid;
 }
 .Card__img{
   max-width: 400px;
