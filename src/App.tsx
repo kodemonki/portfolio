@@ -1,5 +1,4 @@
 import "./css/App.css";
-import "./css/Game.css";
 import Header from "./components/Header";
 import Projects from "./pages/Projects";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
