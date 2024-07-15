@@ -13,7 +13,6 @@ const App = () => {
       <Game />
       <Router>
         <Routes>
-          <Route path="/" Component={Projects} />
           <Route path="/projects" Component={Projects} />
           <Route path="/experience" Component={Experience} />
           <Route path="/contact" Component={Contact} />
