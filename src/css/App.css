@@ -2,10 +2,10 @@
   width: 100%;
   height: 100%;
 }
-#phaser-parent{
-  position:fixed;
-  top:0px;
-  left:0px;
+#phaser-parent {
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 .Header {
   position: fixed;
@@ -19,12 +19,12 @@
 .Header a[href]:link,
 .Header a[href]:visited,
 .Header a[href]:active {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .Header a[href]:hover {
-    color: rgb(255, 200, 0);
-    text-decoration: none;
+  color: rgb(255, 200, 0);
+  text-decoration: none;
 }
 .Header__left {
   padding-left: 16px;
@@ -37,8 +37,11 @@
   margin-bottom: 16px;
 }
 .Page {
-  position:relative;
-  padding:16px;
+  position: relative;
+  padding: 16px;
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .Card {
   background-color: #e2d9d9;
@@ -49,6 +52,9 @@
 }
 .Card__img {
   max-width: 300px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
