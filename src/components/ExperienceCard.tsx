@@ -3,7 +3,6 @@ import { ExperienceData } from "../pages/Experience";
 const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
   const { name, role, description, skills, technology } = experience;
   return (
-    <div className="container">
       <div className="Card">
         <div>
           <b>{name} - {role}</b>
@@ -18,7 +17,6 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
         <hr/>       
         <div>{description}</div>
       </div>
-    </div>
   );
 };
 
