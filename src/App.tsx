@@ -5,6 +5,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Game from "./components/Game";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         </Routes>
         <Header />
       </Router>
+      <Game/>
     </>
   );
 };
