@@ -1,4 +1,5 @@
-import "./App.css";
+import "./css/App.css";
+import "./css/Game.css";
 import Header from "./components/Header";
 import Projects from "./pages/Projects";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,6 +11,7 @@ import Game from "./components/Game";
 const App = () => {
   return (
     <>
+      <Game />
       <Router>
         <Routes>
           <Route path="/" Component={Projects} />
@@ -20,7 +22,6 @@ const App = () => {
         </Routes>
         <Header />
       </Router>
-      <Game/>
     </>
   );
 };

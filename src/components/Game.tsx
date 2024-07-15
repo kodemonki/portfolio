@@ -1,29 +1,28 @@
 import { useEffect, useState } from "react";
 import Phaser from "phaser";
-import { MainMenu } from "./MainMenu";
+import { Starfield } from "./Starfield";
+import config from "../service/config";
 
 const PhaserRoot = () => {
-  // Component centralized reference to the phaser instance if needed.
   const [, setPhaser] = useState<Phaser.Game>();
 
-  // Create a new Phaser.Game instance after the initial render.
   useEffect(() => {
     const _phaser = new Phaser.Game({
       type: Phaser.AUTO,
       scale: {
-        mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.HEIGHT_CONTROLS_WIDTH,
         autoCenter: Phaser.Scale.CENTER_BOTH,
         parent: "phaser-parent",
-        width: 1920,
-        height: 1080,
+        width: 768*4,
+        height: 1024,
       },
       backgroundColor: "#ffd13b",
-      scene: [MainMenu],
+      scene: [Starfield],
     });
     setPhaser(_phaser);
   }, []);
 
-  return <div id="phaser-parent"></div>;
+  return <div id={config.phaser_div_id}></div>;
 };
 
 export default PhaserRoot;
