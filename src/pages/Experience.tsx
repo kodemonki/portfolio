@@ -24,7 +24,8 @@ const Experience = () => {
 
   return (
     <>
-      <div className="Page">
+      <div className="Page fade-in">
+      <h2>Experience</h2>
         {experiences.map((experience, index) => {
           return (
             <ExperienceCard

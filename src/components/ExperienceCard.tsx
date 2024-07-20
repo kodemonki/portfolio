@@ -7,15 +7,14 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
         <div>
           <b>{name} - {role}</b>
         </div>
-        <hr/>       
         <div>
           <i>{skills}</i>
         </div>
         <div>
           <i>{technology}</i>
         </div>
-        <hr/>       
-        <div>{description}</div>
+        <div>{description}</div>              
+        <br/>
       </div>
   );
 };

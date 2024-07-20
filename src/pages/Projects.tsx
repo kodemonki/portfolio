@@ -3,7 +3,7 @@ import { getProjects } from "../service/apiRequests";
 import ProjectCard from "../components/ProjectCard";
 
 export interface ProjectData {
-  project:Project;
+  project: Project;
 }
 
 export interface Project {
@@ -22,13 +22,11 @@ const Projects = () => {
 
   return (
     <>
-      <div className="Page">
+      <div className="Panel__left slide-in">
+        <h2>Projects</h2>
         {projects.map((project, index) => {
           return (
-            <ProjectCard
-              key={`${project.name}${index}`}
-              project={project}         
-            />
+            <ProjectCard key={`${project.name}${index}`} project={project} />
           );
         })}
       </div>
