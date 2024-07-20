@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Phaser from "phaser";
 import { Starfield } from "./Starfield";
 import config from "../service/config";
+import { Preloader } from "./Preloader";
 
 const PhaserRoot = () => {
   const [, setPhaser] = useState<Phaser.Game>();
@@ -17,7 +18,7 @@ const PhaserRoot = () => {
         height: 1024,
       },
       backgroundColor: "#ffd13b",
-      scene: [Starfield],
+      scene: [Preloader, Starfield],
     });
     setPhaser(_phaser);
   }, []);
