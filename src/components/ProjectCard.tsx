@@ -5,18 +5,17 @@ const ProjectCard: React.FC<ProjectData> = ({ project }) => {
   return (
     <div className="Card">
       <div>
-        <b>{name}</b>
+        <h3>{name}</h3>
       </div>
       <div>
         <i>{description}</i>
       </div>
-
       <div>
         <i>{technology}</i>
       </div>
       <a href={url} target="_blank">
         <b>Visit Link</b>
-      </a>
+      </a>     
     </div>
   );
 };
