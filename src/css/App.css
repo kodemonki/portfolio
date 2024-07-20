@@ -1,3 +1,9 @@
+a[href]{
+  color: rgb(255, 200, 0);
+}
+a[href]:hover{
+  color: rgb(134, 110, 21);
+}
 #root {
   width: 100%;
   height: 100%;
