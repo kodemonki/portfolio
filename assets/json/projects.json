@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Porttfolio",
+    "description": "This Porttfolio SPA.",
+    "url": "https://kodemonki.github.io/portfolio/",
+    "technology": "Typescript, React, CSS, HTML"
+  },
+  {
+    "name": "DragonSouls",
+    "description": "Phaser game - demon souls meets double dragon.",
+    "url": "https://kodemonki.github.io/dragonsouls/",
+    "technology": "Typescript, React, CSS, HTML, NODE"
+  },
+  {
+    "name": "JamApp",
+    "description": "Javascript tool for remotely sharing and creating loops with friends",
+    "url": "",
+    "technology": "Typescript, React, CSS, HTML, NODE"
+  },
+  {
+    "name": "AudioBuddy Alexa Skill",
+    "description": "Alexa Skill for musicians",
+    "url": "",
+    "technology": "Typescript, React, CSS, HTML, NODE"
+  }
+]
