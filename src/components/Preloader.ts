@@ -5,7 +5,6 @@ export class Preloader extends Scene {
     super("Preloader");
   }
   preload() {
-    this.load.image("static", "images/static.png");
     this.load.atlas('flares', 'assets/particles/flares.png', 'assets/particles/flares.json');
   }
   create() {

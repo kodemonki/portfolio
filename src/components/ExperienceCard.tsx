@@ -1,11 +1,11 @@
 import { ExperienceData } from "../pages/Experience";
 
 const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
-  const { name, role, description, skills, technology } = experience;
+  const { name, role, description, skills, technology , date} = experience;
   return (
       <div className="Card">
         <div>
-          <b>{name} - {role}</b>
+          <b>{name} - {role} - {date}</b>
         </div>
         <div>
           <i>{skills}</i>

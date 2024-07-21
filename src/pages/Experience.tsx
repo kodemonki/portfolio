@@ -13,6 +13,7 @@ export interface Experience {
   technology: string;
   number: number;
   role: string;
+  date: string;
 }
 
 const Experience = () => {
@@ -25,7 +26,7 @@ const Experience = () => {
   return (
     <>
       <div className="Page fade-in">
-      <h2>Experience</h2>
+        <h2>Experience</h2>
         {experiences.map((experience, index) => {
           return (
             <ExperienceCard

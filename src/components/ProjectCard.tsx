@@ -13,9 +13,16 @@ const ProjectCard: React.FC<ProjectData> = ({ project }) => {
       <div>
         <i>{technology}</i>
       </div>
-      <a href={url} target="_blank">
-        <b>Visit Link</b>
-      </a>     
+      {url !== "" && (
+        <a href={url} target="_blank">
+          <b>Visit Link</b>
+        </a>
+      )}
+       {url === "" && (
+        <a href={window.location.href} target="_self">
+          <b>Link TBC</b>
+        </a>
+      )}
     </div>
   );
 };

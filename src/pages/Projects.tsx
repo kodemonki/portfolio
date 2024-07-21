@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProjects } from "../service/apiRequests";
 import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 
 export interface ProjectData {
   project: Project;
@@ -23,6 +24,9 @@ const Projects = () => {
   return (
     <>
       <div className="Panel__left slide-in">
+        <div className="Panel__left__closeBtn">
+          <Link to="/">x</Link>
+        </div>
         <h2>Projects</h2>
         {projects.map((project, index) => {
           return (
