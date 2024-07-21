@@ -16,85 +16,85 @@
   {
     "name": "Esure Group",
     "role": "Full stack Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was working as a full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "MoneyExpert.com",
     "role": "Frontend lead developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was working as Frontend tech lead, leading a small team of developers. This is across a range of B2B applications and websites. We are using React, React-Native and Cordova for the frontend, with a .Net bespoke back end API system.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "Jack Morton Worldwide",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was brought in as a Front end React developer to make a microsite which loads data from a google cloud API, and has to sit within a Chrome OS Kiosk App.",
     "Skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "NETBuilder",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was brought in as lead React developer to head up a team developing components for the BT.com AEM SPA site and across the business offerings. I initially created a complete front end approach using the React Adobe SPA archetype, and later adopted these approaches to the other squads. This was a fully agile project, with several remote members of the team.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "Jack Morton Worldwide",
     "role": "Freelance Technical lead Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was brought in as Technical lead on the creation of 5 mini games for an Event in Washington. I created 3 of the games in React and Javascript, using Electron to deploy the fullscreen applications. The other 2 games were created by freelancers, on a AR unity app and the other an openFrameworks C++ Kinect and projector Application. The games I created were a document intelligence simultaneous multi user timed drag and drop, a voice recognition quiz and a 4 player intelligence automation system, The purpose of these was to demonstrate the power and benefits of AI in the corporate world.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "Native",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
-    "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
-    "technology": "Typescript, React, CSS, HTML, NODE"
+    "description": "I was brought in to update the companies dot com site. It was relatively simple static site build, using node as a deployment system. It was predominantly made with html5 css and vanilla javascript.",
+    "skills": "Cascading Style Sheets (CSS) · JavaScript · HTML5 · Web Development · Content Development",
+    "technology": "JavaScript, CSS, HTML, NODE"
   },
   {
     "name": "Elvis communications",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was brought in for the Hunt the white creme egg project, I was essentially technical architect for this alongside a back end dev that wrote the api. It involved a single page application made with react / redux which had a .net api backend. It enabled the realtime cropping of images with a touch and desktop interface. It used token authentication and a series of security measures to combat cheating. We made use of several and visual effect libraries optimised for the mobile experience.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "MullenLowe",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was initially brought in to create a double-click dynamic banner campaign, but then developed a headless CMS solution based around React/Redux with server side rendering for optimised SEO. Additionally, I was asked to lead the front end side of a large site build, using Umbraco as the back end and a vanilla Javascript front end. I created an automated build script using gulp and metalsmith which creates a testbed for testing components and templates outside of the cms.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "BradleyDyer",
     "role": "Technical Lead",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
+    "description": "I was brought in to head the development team, primarily concerned with small scale site builds. I developed a Headless CMS approach, using Wordpress to create the JSON data and a lightweight php front end. The whole thing was wrapped in docker containers for deployment into a cloud based continuous integration environment.I was brought in to head the development team, primarily concerned with small scale site builds. I developed a Headless CMS approach, using Wordpress to create the JSON data and a lightweight php front end. The whole thing was wrapped in docker containers for deployment into a cloud based continuous integration environment.",
     "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
     "technology": "Typescript, React, CSS, HTML, NODE"
   },
   {
     "name": "Williams Lee Tag",
     "role": "Technical Lead",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
-    "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
-    "technology": "Typescript, React, CSS, HTML, NODE"
+    "description": "I have had quite a varied role so far at Williams lea tag producing code for both the front and back end. I have created dynamic banner campaigns, Micro sites, internal tools, Javascript games, mentored junior developers, created costings and scope of work documentation, built dev servers and have been involved with continuous integration environments.",
+    "skills": "JavaScript · Technical Leadership · Adobe Experience Manager (AEM) · Web Development · Content Management Systems (CMS) · React.js",
+    "technology": "JavaScript, React, AEM, CSS, HTML"
   },
   {
     "name": "Investec",
     "role": "Freelance React Developer",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
-    "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
-    "technology": "Typescript, React, CSS, HTML, NODE"
+    "description": "I was contracting for Dare London as part of a team sent over to rebrand the Investec website. I was the senior developer on the ground, with a tech lead based in London. We created a static style guide and series of javascript components mainly using Metalsmith and gulp as part of the build process. Technologically we used Bootstrap for the responsive grid, Sass for the precompiled css and gulp for the code minification and optimisation. The end product was built into an AEM content management system.",
+    "skills": "Cascading Style Sheets (CSS) · JavaScript · Adobe Experience Manager (AEM) · HTML5",
+    "technology": "JavaScript, AEM, CSS, HTML"
   },
   {
     "name": "Omnicom Media Group",
     "role": "Director of creative technology",
-    "description": "I was working as a senior full stack developer as part of a team working on a digital transformation of an insurance business. This is a fully agile team run with a scrum master, using Jira for the tickets with a fully automated CI/CD system. As a senior developer in this role my responsibilities include assisting development of the component library and applications that consume it, mentoring junior developers, interviewing potential candidates. The front end is built with React with a component library built upon Material UI with a custom NPM component library that facilitates code reuse and stability.",
-    "skills": "TypeScript · MobX · JavaScript · Front-end Engineering · Material-UI · React.js",
-    "technology": "Typescript, React, CSS, HTML, NODE"
+    "description": "I was working for the last year as part of a new creative team with the objective of merging new technologies into the marketing projects. This was largely a research and development role, I spent a lot of time researching the Arduino electronics platform and other emerging technologies with the aim of creating interesting marketing campaigns.",
+    "skills": "Team Leadership · Creative Team ",
+    "technology": "JavaScript, CSS, HTML"
   }
 ]
