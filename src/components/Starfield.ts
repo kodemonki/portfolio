@@ -46,17 +46,23 @@ export class Starfield extends Scene {
 
   update() {
     if (this.wisp != undefined) {
-      this.wisp.x = this.input.x;
-      this.wisp.y = this.input.y;
-      const x1 = this.input.x;
-      const y1 = this.input.y;
-      const x2 = 1024 * 2;
-      const y2 = 768;
-      const angleRadians = Math.atan2(y1 - y2, x1 - x2);
-      this.wisp.rotation = angleRadians;
+      if (this.input.x > 0) {
+        this.wisp.x = this.input.x;
+        this.wisp.y = this.input.y;
+        const x1 = this.input.x;
+        const y1 = this.input.y;
+        const x2 = 1024 * 2;
+        const y2 = 768;
+        const angleRadians = Math.atan2(y1 - y2, x1 - x2);
+        this.wisp.rotation = angleRadians;
 
-      const distToCenter = Phaser.Math.Distance.Between(x1, y1, x2, y2);
-      this.wisp.lifespan = (distToCenter / 2)+200;
+        const distToCenter = Phaser.Math.Distance.Between(x1, y1, x2, y2);
+        this.wisp.lifespan = distToCenter / 2 + 200;
+      } else {
+        this.wisp.x = 1024 * 2;
+        this.wisp.y = 768;
+        this.wisp.rotation = 1.571;
+      }
     }
     this.stars?.clear(true, true);
     if (this.points !== undefined) {
@@ -72,7 +78,7 @@ export class Starfield extends Scene {
           point.x * (128 / point.z) + Number(this.game.config.width) * 0.5;
         const py =
           point.y * (128 / point.z) + Number(this.game.config.height) * 0.5;
-        const circle = new Phaser.Geom.Circle(px, py, (1 - point.z / 32) * 2);
+        const circle = new Phaser.Geom.Circle(px, py, (1 - point.z / 32) * 3);
         const graphics = this.add.graphics({
           fillStyle: { color: 0xffffff },
         });
