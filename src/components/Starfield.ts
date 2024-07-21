@@ -43,14 +43,13 @@ export class Starfield extends Scene {
       blendMode: "ADD",
     });
   }
-
-  update() {
+  snapToInput() {
     if (this.wisp != undefined) {
       if (this.input.x > 0) {
-        this.wisp.x = this.input.x;
-        this.wisp.y = this.input.y;
-        const x1 = this.input.x;
-        const y1 = this.input.y;
+        this.wisp.x = this.wisp.x + (this.input.x - this.wisp.x) / 25;
+        this.wisp.y = this.wisp.y + (this.input.y - this.wisp.y) / 25;
+        const x1 = this.wisp.x;
+        const y1 = this.wisp.y;
         const x2 = 1024 * 2;
         const y2 = 768;
         const angleRadians = Math.atan2(y1 - y2, x1 - x2);
@@ -64,6 +63,8 @@ export class Starfield extends Scene {
         this.wisp.rotation = 1.571;
       }
     }
+  }
+  updateStars() {
     this.stars?.clear(true, true);
     if (this.points !== undefined) {
       for (let i = 0; i < this.points.length; i++) {
@@ -87,5 +88,9 @@ export class Starfield extends Scene {
         this.stars?.add(graphics);
       }
     }
+  }
+  update() {
+    this.snapToInput();
+    this.updateStars();
   }
 }

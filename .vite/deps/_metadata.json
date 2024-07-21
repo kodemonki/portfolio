@@ -1,0 +1,58 @@
+{
+  "hash": "e6e52806",
+  "configHash": "3826ec02",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "f45cf82a",
+  "optimized": {
+    "@gsap/react": {
+      "src": "../../node_modules/@gsap/react/src/index.js",
+      "file": "@gsap_react.js",
+      "fileHash": "42f868cb",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "c5ba9c9e",
+      "needsInterop": false
+    },
+    "phaser": {
+      "src": "../../node_modules/phaser/dist/phaser.js",
+      "file": "phaser.js",
+      "fileHash": "5342751e",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "b3698e03",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "9f179380",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "5b92528c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-LB2R3FI5": {
+      "file": "chunk-LB2R3FI5.js"
+    },
+    "chunk-HCGKX5ED": {
+      "file": "chunk-HCGKX5ED.js"
+    },
+    "chunk-WNPTCGAH": {
+      "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}
