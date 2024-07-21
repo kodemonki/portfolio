@@ -13,6 +13,7 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
         <div>
           <i>{technology}</i>
         </div>
+        <br/>
         <div>{description}</div>              
         <br/>
       </div>

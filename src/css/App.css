@@ -55,13 +55,12 @@ a[href]:hover{
   top:0px;
   left:0px;
   max-width:400px;
-  width:100%;
   border-right: 2px rgb(70, 68, 67) solid;
   border-bottom: 2px rgb(70, 68, 67) solid;
 l
 }
 .Card {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 .Card__img {

@@ -39,7 +39,7 @@ export class Starfield extends Scene {
       angle: { min: 40, max: -40 },
       scale: { start: 1, end: 0, ease: "sine.in" },
       speed: { min: 150, max: 450 },
-      advance: 2000,
+      advance: 500,
       blendMode: "ADD",
     });
   }
@@ -54,6 +54,10 @@ export class Starfield extends Scene {
       const y2 = 768;
       const angleRadians = Math.atan2(y1 - y2, x1 - x2);
       this.wisp.rotation = angleRadians;
+
+      const distToCenter = Phaser.Math.Distance.Between(x1, y1, x2, y2);
+      console.log(distToCenter);
+      this.wisp.lifespan = (distToCenter / 2)+200;
     }
     this.stars?.clear(true, true);
     if (this.points !== undefined) {
