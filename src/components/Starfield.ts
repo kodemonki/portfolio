@@ -56,7 +56,6 @@ export class Starfield extends Scene {
       this.wisp.rotation = angleRadians;
 
       const distToCenter = Phaser.Math.Distance.Between(x1, y1, x2, y2);
-      console.log(distToCenter);
       this.wisp.lifespan = (distToCenter / 2)+200;
     }
     this.stars?.clear(true, true);
