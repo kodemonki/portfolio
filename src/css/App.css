@@ -58,7 +58,7 @@ a[href]:hover{
   border-right: 2px rgb(70, 68, 67) solid;
   border-bottom: 2px rgb(70, 68, 67) solid;
 }
-.Panel__left__closeBtn{
+.CloseBtn{
   position:absolute;
   top:0px;
   padding:8px;

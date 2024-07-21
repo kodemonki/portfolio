@@ -1,11 +1,23 @@
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <div className="Page fade-in">
-      <div className="Card" >
+      <div className="CloseBtn">
+        <Link to="/">x</Link>
+      </div>
+      <div className="Card">
         <h2>Contact</h2>
-        Email : <a href="mailto:kodemonki@hotmail.com">kodemonki@hotmail.com</a><br/>
-        Linkedin : <a href="https://www.linkedin.com/in/tomjane/">https://www.linkedin.com/in/tomjane/</a><br/>
-        Github : <a href="https://github.com/kodemonki">https://github.com/kodemonki</a><br/>
+        Email : <a href="mailto:kodemonki@hotmail.com">kodemonki@hotmail.com</a>
+        <br />
+        Linkedin :{" "}
+        <a href="https://www.linkedin.com/in/tomjane/">
+          https://www.linkedin.com/in/tomjane/
+        </a>
+        <br />
+        Github :{" "}
+        <a href="https://github.com/kodemonki">https://github.com/kodemonki</a>
+        <br />
       </div>
     </div>
   );

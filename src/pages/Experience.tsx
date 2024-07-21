@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getExperience } from "../service/apiRequests";
 import ExperienceCard from "../components/ExperienceCard";
+import { Link } from "react-router-dom";
 
 export interface ExperienceData {
   experience: Experience;
@@ -26,6 +27,9 @@ const Experience = () => {
   return (
     <>
       <div className="Page fade-in">
+        <div className="CloseBtn">
+          <Link to="/">x</Link>
+        </div>
         <h2>Experience</h2>
         {experiences.map((experience, index) => {
           return (

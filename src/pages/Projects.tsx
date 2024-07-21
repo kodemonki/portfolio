@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <>
       <div className="Panel__left slide-in">
-        <div className="Panel__left__closeBtn">
+        <div className="CloseBtn">
           <Link to="/">x</Link>
         </div>
         <h2>Projects</h2>
