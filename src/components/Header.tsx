@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/experience">Experience</Link>{' - '}
         <Link to="/contact">Contact</Link>{' - '}
         <a href="/ThomasJaneCV_2024_july.pdf" download>
-          Download&nbsp;CV
+          CV
         </a>
       </p>
     </div>
