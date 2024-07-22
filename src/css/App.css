@@ -33,6 +33,10 @@ a[href]:hover{
   color: rgb(255, 200, 0);
   text-decoration: none;
 }
+.Header__selected{
+  color: rgb(255, 200, 0);
+  font-weight: bold;
+}
 .Header__left {
   padding-left: 16px;
 }
