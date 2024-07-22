@@ -96,10 +96,10 @@ a[href]:hover{
   .Header__right {
     margin-top: 48px;
   }
-  .Page {
+  .Panel__left {
     margin-top: 32px;
   }
-  .Panel__left {
+  .Panel__right {
     margin-top: 32px;
   }
 }
@@ -114,10 +114,10 @@ a[href]:hover{
   .Header__right {
     margin-top: 16px;
   }
-  .Page {
-   margin-top:0px;
-  }
   .Panel__left {
+    margin-top: 0px;
+  }
+  .Panel__right {
     margin-top: 0px;
   }
 }
