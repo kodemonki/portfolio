@@ -12,9 +12,20 @@ export class Starfield extends Scene {
   stars: Phaser.GameObjects.Group | undefined;
   maxDepth: number | undefined;
   wisp: Phaser.GameObjects.Particles.ParticleEmitter | undefined;
+  starSpeed: number = 0.02;
+  starSpeedBoost: number = 0.2;
+  isBoosting: boolean = false;
 
   constructor() {
     super("Starfield");
+  }
+  startBoost() {
+    console.log("startBoost");
+    this.isBoosting = true;
+  }
+  stopBoost() {
+    console.log("stopBoost");
+    this.isBoosting = false;
   }
   create() {
     this.cameras.main.setBackgroundColor(0x000000);
@@ -42,6 +53,20 @@ export class Starfield extends Scene {
       advance: 500,
       blendMode: "ADD",
     });
+
+    this.input.on("pointerdown", () => this.startBoost(), this);
+    this.input.on("pointerup", () => this.stopBoost(), this);
+
+    if (this.input.keyboard) {
+      this.input.keyboard.on("keydown", (event: { keyCode: number }) => {
+        if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.SPACE)
+          this.startBoost();
+      });
+      this.input.keyboard.on("keyup", (event: { keyCode: number }) => {
+        if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.SPACE)
+          this.stopBoost();
+      });
+    }
   }
   snapToInput() {
     if (this.wisp != undefined) {
@@ -56,7 +81,11 @@ export class Starfield extends Scene {
         this.wisp.rotation = angleRadians;
 
         const distToCenter = Phaser.Math.Distance.Between(x1, y1, x2, y2);
-        this.wisp.lifespan = distToCenter / 2 + 200;
+        if (this.isBoosting) {
+          this.wisp.lifespan = (distToCenter / 2 + 200) * 2;
+        } else {
+          this.wisp.lifespan = distToCenter / 2 + 200;
+        }
       } else {
         this.wisp.x = 1024 * 2;
         this.wisp.y = 768;
@@ -69,7 +98,12 @@ export class Starfield extends Scene {
     if (this.points !== undefined) {
       for (let i = 0; i < this.points.length; i++) {
         const point = this.points[i];
-        point.z -= 0.02;
+        if (this.isBoosting) {
+          point.z -= this.starSpeedBoost;
+        } else {
+          point.z -= this.starSpeed;
+        }
+
         if (point.z <= 0) {
           point.x = Phaser.Math.Between(-25, 25);
           point.y = Phaser.Math.Between(-25, 25);
