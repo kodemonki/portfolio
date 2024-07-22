@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <div className="Header">
       <p className="Header__left">
-        <Link to="/">Portfolio - Thomas Jane</Link>
+      {pathname === "/" && (<span className="Header__selected">Portfolio - Thomas Jane</span>)}
+      {pathname !== "/" && <Link to="/">Portfolio - Thomas Jane</Link>}
       </p>
       <p className="Header__right">
         {pathname === "/projects" && (<span className="Header__selected">Projects</span>)}
