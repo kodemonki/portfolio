@@ -15,6 +15,7 @@ export interface Experience {
   number: number;
   role: string;
   date: string;
+  url: string;
 }
 
 const Experience = () => {
@@ -26,20 +27,22 @@ const Experience = () => {
 
   return (
     <>
-      <div className="Page fade-in">
-        <div className="CloseBtn">
-          <Link to="/">x</Link>
+      {experiences.length > 0 && (
+        <div className="Panel__left slide-in-right">
+          <div className="CloseBtn">
+            <Link to="/">x</Link>
+          </div>
+          <h2>Experience</h2>
+          {experiences.map((experience, index) => {
+            return (
+              <ExperienceCard
+                experience={experience}
+                key={`${experience.name}${index}`}
+              />
+            );
+          })}
         </div>
-        <h2>Experience</h2>
-        {experiences.map((experience, index) => {
-          return (
-            <ExperienceCard
-              experience={experience}
-              key={`${experience.name}${index}`}
-            />
-          );
-        })}
-      </div>
+      )}
     </>
   );
 };

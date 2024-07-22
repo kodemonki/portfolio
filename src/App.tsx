@@ -6,6 +6,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Game from "./components/Game";
+import CV from "./pages/CV";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/projects" Component={Projects} />
           <Route path="/experience" Component={Experience} />
           <Route path="/contact" Component={Contact} />
+          <Route path="/cv" Component={CV} />
           <Route path="*" Component={NotFound} />
         </Routes>
         <Header />

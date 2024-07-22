@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectData> = ({ project }) => {
         </a>
       )}
        {url === "" && (
-        <a href={window.location.href} target="_self">
+        <a href={window.location.href} target="_blank">
           <b>Link TBC</b>
         </a>
       )}
