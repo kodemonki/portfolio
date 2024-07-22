@@ -1,7 +1,7 @@
 [
   {
-    "name": "Porttfolio",
-    "description": "This Porttfolio SPA.",
+    "name": "Portfolio",
+    "description": "This Portfolio SPA.",
     "url": "https://kodemonki.github.io/portfolio/",
     "technology": "Typescript, React, CSS, HTML"
   },

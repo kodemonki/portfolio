@@ -15,16 +15,23 @@ export class Starfield extends Scene {
   starSpeed: number = 0.02;
   starSpeedBoost: number = 0.2;
   isBoosting: boolean = false;
+  soundBoost:
+    | Phaser.Sound.NoAudioSound
+    | Phaser.Sound.HTML5AudioSound
+    | Phaser.Sound.WebAudioSound
+    | undefined;
+  fadeOutTimedEvent:
+    | Phaser.Time.TimerEvent
+    | Phaser.Time.TimerEvent[]
+    | undefined;
 
   constructor() {
     super("Starfield");
   }
   startBoost() {
-    console.log("startBoost");
     this.isBoosting = true;
   }
   stopBoost() {
-    console.log("stopBoost");
     this.isBoosting = false;
   }
   create() {
