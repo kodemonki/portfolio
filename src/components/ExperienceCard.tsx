@@ -37,7 +37,7 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
           Show More Detail
         </a>
       )}
-      <div>{showDescription && description}</div>
+      {showDescription && <><br/><div>{description}</div></>}
       {showDescription && (
         <a
           href={"javascript:void(0)"}
