@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <div className="Header">
       <p className="Header__left">
