@@ -21,12 +21,12 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
           <b>Link TBC</b>
         </a>
       )}
-      <div>
-        <i>{skills}</i>
-      </div>
-      <div>
-        <i>{technology}</i>
-      </div>
+      <ul>
+        <div>
+          <li>{skills}</li>
+          <li>{technology}</li>
+        </div>
+      </ul>
       {!showDescription && (
         <a
           href={"javascript:void(0)"}
@@ -37,16 +37,24 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
           Show More Detail
         </a>
       )}
-      {showDescription && <><br/><div>{description}</div></>}
       {showDescription && (
-        <a
-          href={"javascript:void(0)"}
-          onClick={() => {
-            setShowDescription(false);
-          }}
-        >
-          Show Less Detail
-        </a>
+        <>
+          <br />
+          <div>{description}</div>
+        </>
+      )}
+      {showDescription && (
+        <>
+          <br />
+          <a
+            href={"javascript:void(0)"}
+            onClick={() => {
+              setShowDescription(false);
+            }}
+          >
+            Show Less Detail
+          </a>
+        </>
       )}
     </div>
   );
