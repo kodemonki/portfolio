@@ -1,8 +1,17 @@
 [
+
+
+
   {
     "name": "Portfolio",
     "description": "This Portfolio SPA.",
     "url": "https://kodemonki.github.io/portfolio/",
+    "technology": "Typescript, React, CSS, HTML"
+  },
+  {
+    "name": "PianoBuddy",
+    "description": "React App for displaying all the scales and modes in western music, to help me practice Jazz.",
+    "url": "  https://kodemonki.github.io/pianobuddy/",
     "technology": "Typescript, React, CSS, HTML"
   },
   {
