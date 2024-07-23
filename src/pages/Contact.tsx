@@ -12,11 +12,10 @@ const Contact = () => {
         <br />
         Linkedin :{" "}
         <a href="https://www.linkedin.com/in/tomjane/">
-          www.linkedin.com/in/tomjane/
+          linkedin.com/in/tomjane/
         </a>
         <br />
-        Github :{" "}
-        <a href="https://github.com/kodemonki">github.com/kodemonki</a>
+        Github : <a href="https://github.com/kodemonki">github.com/kodemonki</a>
         <br />
       </div>
     </div>
