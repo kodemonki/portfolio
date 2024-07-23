@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { ExperienceData } from "../pages/Experience";
 
 const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
   const { name, role, description, skills, technology, date, url } = experience;
+  const [showDescription, setShowDescription] = useState(false);
   return (
     <div className="Card">
       <div>
@@ -9,13 +11,6 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
           {name} - {role} - {date}
         </b>
       </div>
-      <div>
-        <i>{skills}</i>
-      </div>
-      <div>
-        <i>{technology}</i>
-      </div>
-      <div>{description}</div>
       {url !== "" && (
         <a href={url} target="_blank">
           <b>Visit Link</b>
@@ -26,7 +21,33 @@ const ExperienceCard: React.FC<ExperienceData> = ({ experience }) => {
           <b>Link TBC</b>
         </a>
       )}
-      <br />
+      <div>
+        <i>{skills}</i>
+      </div>
+      <div>
+        <i>{technology}</i>
+      </div>
+      {!showDescription && (
+        <a
+          href={"javascript:void(0)"}
+          onClick={() => {
+            setShowDescription(true);
+          }}
+        >
+          Show More Detail
+        </a>
+      )}
+      <div>{showDescription && description}</div>
+      {showDescription && (
+        <a
+          href={"javascript:void(0)"}
+          onClick={() => {
+            setShowDescription(false);
+          }}
+        >
+          Show Less Detail
+        </a>
+      )}
     </div>
   );
 };
