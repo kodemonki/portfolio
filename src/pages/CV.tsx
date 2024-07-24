@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="Panel__right slide-in-left">
+    <div className="Panel__left slide-in-right">
       <div className="CloseBtn">
         <Link to="/">x</Link>
       </div>
